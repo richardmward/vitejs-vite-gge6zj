@@ -1,6 +1,12 @@
 <template>
   <div
-    style="background: #eee; border: 2px solid #aaa; padding: 4px; margin: 4px"
+    style="
+      background: #eee;
+      border: 2px solid #aaa;
+      padding: 4px;
+      margin: 4px;
+      cursor: pointer;
+    "
   >
     <h3>{{ title }}</h3>
     <p>{{ body }}</p>

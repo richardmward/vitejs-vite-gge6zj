@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <StarportCarrier />
     <h1>Starport lists</h1>
     <div style="display: flex; gap: 4px">
       <SList
@@ -15,7 +16,6 @@
         @toggle="toggle"
       />
     </div>
-    <StarportCarrier />
   </div>
 </template>
 
@@ -61,5 +61,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+[data-starport-craft] {
+  background: #0805;
+}
+[data-starport-proxy]:not([data-starport-landed]) {
+  background: #8005;
 }
 </style>
